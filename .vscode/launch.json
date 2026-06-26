@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Generate demo video",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/generate_demo.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run product counter",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/product_counter.py",
+      "args": [
+        "--video",
+        "${workspaceFolder}/demo/conveyor_demo.mp4",
+        "--output",
+        "${workspaceFolder}/demo/conveyor_counted.mp4"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
